@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453463B71E7C0162000D3A52 /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = 453463B61E7C0162000D3A52 /* smile.png */; };
+		453463B91E7C07B9000D3A52 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453463B81E7C07B9000D3A52 /* MediaPlayer.framework */; };
+		453463BB1E7C07C0000D3A52 /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453463BA1E7C07C0000D3A52 /* MediaToolbox.framework */; };
+		453463BD1E7C07C8000D3A52 /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453463BC1E7C07C8000D3A52 /* MediaAccessibility.framework */; };
+		453463BF1E7C07D4000D3A52 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453463BE1E7C07D4000D3A52 /* CoreAudio.framework */; };
+		453463C11E7C07DA000D3A52 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453463C01E7C07DA000D3A52 /* AudioToolbox.framework */; };
 		45ACB1D71E72C83B001C39F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45ACB1D61E72C83B001C39F0 /* main.m */; };
 		45ACB1DA1E72C83B001C39F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45ACB1D91E72C83B001C39F0 /* AppDelegate.m */; };
 		45ACB1DD1E72C83B001C39F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45ACB1DC1E72C83B001C39F0 /* ViewController.m */; };
@@ -22,6 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		453463B61E7C0162000D3A52 /* smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile.png; sourceTree = "<group>"; };
+		453463B81E7C07B9000D3A52 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		453463BA1E7C07C0000D3A52 /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
+		453463BC1E7C07C8000D3A52 /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
+		453463BE1E7C07D4000D3A52 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		453463C01E7C07DA000D3A52 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		45ACB1D21E72C83B001C39F0 /* EditVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45ACB1D61E72C83B001C39F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		45ACB1D81E72C83B001C39F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,6 +57,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453463C11E7C07DA000D3A52 /* AudioToolbox.framework in Frameworks */,
+				453463BF1E7C07D4000D3A52 /* CoreAudio.framework in Frameworks */,
+				453463BD1E7C07C8000D3A52 /* MediaAccessibility.framework in Frameworks */,
+				453463BB1E7C07C0000D3A52 /* MediaToolbox.framework in Frameworks */,
+				453463B91E7C07B9000D3A52 /* MediaPlayer.framework in Frameworks */,
 				45ACB20A1E72CA29001C39F0 /* QuartzCore.framework in Frameworks */,
 				45ACB2081E72CA23001C39F0 /* CoreMedia.framework in Frameworks */,
 				45ACB2061E72CA1C001C39F0 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +104,7 @@
 		45ACB1D51E72C83B001C39F0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				453463B61E7C0162000D3A52 /* smile.png */,
 				45ACB20B1E72CBD5001C39F0 /* Movie.m4v */,
 				45ACB20C1E72CBD5001C39F0 /* Music.m4a */,
 				45ACB1DE1E72C83B001C39F0 /* Main.storyboard */,
@@ -101,6 +119,11 @@
 		45ACB2021E72CA16001C39F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				453463C01E7C07DA000D3A52 /* AudioToolbox.framework */,
+				453463BE1E7C07D4000D3A52 /* CoreAudio.framework */,
+				453463BC1E7C07C8000D3A52 /* MediaAccessibility.framework */,
+				453463BA1E7C07C0000D3A52 /* MediaToolbox.framework */,
+				453463B81E7C07B9000D3A52 /* MediaPlayer.framework */,
 				45ACB2091E72CA29001C39F0 /* QuartzCore.framework */,
 				45ACB2071E72CA23001C39F0 /* CoreMedia.framework */,
 				45ACB2051E72CA1C001C39F0 /* CoreGraphics.framework */,
@@ -140,6 +163,7 @@
 				TargetAttributes = {
 					45ACB1D11E72C83B001C39F0 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 382AHJM468;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -171,6 +195,7 @@
 				45ACB1E51E72C83B001C39F0 /* LaunchScreen.storyboard in Resources */,
 				45ACB1E21E72C83B001C39F0 /* Assets.xcassets in Resources */,
 				45ACB20D1E72CBD5001C39F0 /* Movie.m4v in Resources */,
+				453463B71E7C0162000D3A52 /* smile.png in Resources */,
 				45ACB1E01E72C83B001C39F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 382AHJM468;
 				INFOPLIST_FILE = EditVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.EditVideo;
@@ -313,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 382AHJM468;
 				INFOPLIST_FILE = EditVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.EditVideo;

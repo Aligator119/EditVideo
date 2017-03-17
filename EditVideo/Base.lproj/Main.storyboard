@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiP-QO-Zba">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWa-Jn-QPU">
+                                        <rect key="frame" x="305" y="7" width="65" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="9YK-DB-dFt"/>
+                                        </constraints>
+                                        <state key="normal" title="Export"/>
+                                        <connections>
+                                            <action selector="exportAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A9s-Jf-P3E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e8-76-0Xm">
+                                        <rect key="frame" x="5" y="7" width="65" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="ZMf-RE-mis"/>
+                                        </constraints>
+                                        <state key="normal" title="Camera"/>
+                                        <connections>
+                                            <action selector="openCameraAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAV-w5-uWF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oWa-Jn-QPU" secondAttribute="trailing" constant="5" id="9jC-Wn-UAF"/>
+                                    <constraint firstItem="6e8-76-0Xm" firstAttribute="top" secondItem="aiP-QO-Zba" secondAttribute="top" constant="7" id="N95-gc-Yb5"/>
+                                    <constraint firstItem="oWa-Jn-QPU" firstAttribute="top" secondItem="aiP-QO-Zba" secondAttribute="top" constant="7" id="Ogj-2o-fMW"/>
+                                    <constraint firstItem="6e8-76-0Xm" firstAttribute="leading" secondItem="aiP-QO-Zba" secondAttribute="leading" constant="5" id="T8K-Lz-EQo"/>
+                                    <constraint firstAttribute="bottom" secondItem="6e8-76-0Xm" secondAttribute="bottom" constant="7" id="dw3-qN-qTC"/>
+                                    <constraint firstAttribute="height" constant="44" id="dxY-6M-8cv"/>
+                                    <constraint firstAttribute="bottom" secondItem="oWa-Jn-QPU" secondAttribute="bottom" constant="7" id="rdy-43-1l2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aiP-QO-Zba" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="PLG-V9-vpD"/>
+                            <constraint firstItem="aiP-QO-Zba" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="q0W-zI-6Gj"/>
+                            <constraint firstAttribute="trailing" secondItem="aiP-QO-Zba" secondAttribute="trailing" id="tBX-U5-igY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>
